@@ -1,12 +1,24 @@
 class Query
   def initialize(atts)
-    @date = atts["date"]
-    @time = atts["time"]
-    @from = atts["from"]
-    @to   = atts["to"]
+    @year   = atts["year"]
+    @month  = atts["month"]
+    @day    = atts["day"]
+    @hour   = atts["hour"]
+    @minute = atts["minute"]
+    @second = atts["second"]
+    @from   = atts["from"]
+    @to     = atts["to"]
+  end
+
+  def time
+    Time.new(@year, @month, @day, @hour.to_i - 11, @minute, @second, "-03:00")
   end
 
   def convert
-    Time.parse("#{@date} 1:00 #{@from}").strftime("%Y-%m-%d %I:%M %p (ART)")
+    {
+      "date" => time.strftime("%Y-%m-%d"),
+      "time" => time.strftime("%I:%M %p"),
+      "timezone" => @to
+    }
   end
 end
