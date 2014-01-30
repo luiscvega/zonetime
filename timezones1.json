@@ -1,0 +1,702 @@
+{
+  "ACDT": {
+    "name": "Australian Central Daylight Time",
+    "utc": 630
+  },
+  "ACST": {
+    "name": "Australian Central Standard Time",
+    "utc": 570
+  },
+  "ACT": {
+    "name": "ASEAN Common Time",
+    "utc": 480
+  },
+  "ADT": {
+    "name": "Atlantic Daylight Time",
+    "utc": -180
+  },
+  "AEDT": {
+    "name": "Australian Eastern Daylight Time",
+    "utc": 660
+  },
+  "AEST": {
+    "name": "Australian Eastern Standard Time",
+    "utc": 600
+  },
+  "AFT": {
+    "name": "Afghanistan Time",
+    "utc": 270
+  },
+  "AKDT": {
+    "name": "Alaska Daylight Time",
+    "utc": -480
+  },
+  "AKST": {
+    "name": "Alaska Standard Time",
+    "utc": -540
+  },
+  "AMST": {
+    "name": "Armenia Summer Time",
+    "utc": 300
+  },
+  "AMT": {
+    "name": "Armenia Time",
+    "utc": 240
+  },
+  "ART": {
+    "name": "Argentina Time",
+    "utc": -180
+  },
+  "AST": {
+    "name": "Arabia Standard Time",
+    "utc": 180
+  },
+  "AWDT": {
+    "name": "Australian Western Daylight Time",
+    "utc": 540
+  },
+  "AWST": {
+    "name": "Australian Western Standard Time",
+    "utc": 480
+  },
+  "AZOST": {
+    "name": "Azores Standard Time",
+    "utc": -60
+  },
+  "AZT": {
+    "name": "Azerbaijan Time",
+    "utc": 240
+  },
+  "BDT": {
+    "name": "Brunei Time",
+    "utc": 480
+  },
+  "BIOT": {
+    "name": "British Indian Ocean Time",
+    "utc": 360
+  },
+  "BIT": {
+    "name": "Baker Island Time",
+    "utc": -720
+  },
+  "BOT": {
+    "name": "Bolivia Time",
+    "utc": -240
+  },
+  "BRT": {
+    "name": "Brasilia Time",
+    "utc": -180
+  },
+  "BST": {
+    "name": "British Summer Time",
+    "utc": 60
+  },
+  "BTT": {
+    "name": "Bhutan Time",
+    "utc": 360
+  },
+  "CAT": {
+    "name": "Central Africa Time",
+    "utc": 120
+  },
+  "CCT": {
+    "name": "Cocos Islands Time",
+    "utc": 390
+  },
+  "CDT": {
+    "name": "Central Daylight Time",
+    "utc": -300
+  },
+  "CEDT": {
+    "name": "Central European Daylight Time",
+    "utc": 120
+  },
+  "CEST": {
+    "name": "Central European Summer Time",
+    "utc": 120
+  },
+  "CET": {
+    "name": "Central European Time",
+    "utc": 60
+  },
+  "CHADT": {
+    "name": "Chatham Daylight Time",
+    "utc": 825
+  },
+  "CHAST": {
+    "name": "Chatham Standard Time",
+    "utc": 765
+  },
+  "CHOT": {
+    "name": "Choibalsan",
+    "utc": -480
+  },
+  "ChST": {
+    "name": "Chamorro Standard Time",
+    "utc": 600
+  },
+  "CHUT": {
+    "name": "Chuuk Time",
+    "utc": 600
+  },
+  "CIST": {
+    "name": "Clipperton Island Standard Time",
+    "utc": -480
+  },
+  "CIT": {
+    "name": "Central Indonesia Time",
+    "utc": 480
+  },
+  "CKT": {
+    "name": "Cook Island Time",
+    "utc": -600
+  },
+  "CLST": {
+    "name": "Chile Summer Time",
+    "utc": -180
+  },
+  "CLT": {
+    "name": "Chile Standard Time",
+    "utc": -240
+  },
+  "COST": {
+    "name": "Colombia Summer Time",
+    "utc": -240
+  },
+  "COT": {
+    "name": "Colombia Time",
+    "utc": -300
+  },
+  "CST": {
+    "name": "Central Standard Time",
+    "utc": -360
+  },
+  "CT": {
+    "name": "China Time",
+    "utc": 480
+  },
+  "CVT": {
+    "name": "Cape Verde Time",
+    "utc": -60
+  },
+  "CWST": {
+    "name": "Central Western Standard Time",
+    "utc": 525
+  },
+  "CXT": {
+    "name": "Christmas Island Time",
+    "utc": 420
+  },
+  "DAVT": {
+    "name": "Davis Time",
+    "utc": 420
+  },
+  "DDUT": {
+    "name": "Dumont d'Urville Time",
+    "utc": 420
+  },
+  "DFT": {
+    "name": "Central European Time in AIX",
+    "utc": 60
+  },
+  "EASST": {
+    "name": "Easter Island Standard Summer Time",
+    "utc": -300
+  },
+  "EAST": {
+    "name": "Easter Island Standard Time",
+    "utc": -360
+  },
+  "EAT": {
+    "name": "East Africa Time",
+    "utc": 180
+  },
+  "ECT": {
+    "name": "Ecuador Time",
+    "utc": -300
+  },
+  "EDT": {
+    "name": "Eastern Daylight Time",
+    "utc": -240
+  },
+  "EEDT": {
+    "name": "Eastern European Daylight Time",
+    "utc": 180
+  },
+  "EEST": {
+    "name": "Eastern European Summer Time",
+    "utc": 180
+  },
+  "EET": {
+    "name": "Eastern European Time",
+    "utc": 120
+  },
+  "EGST": {
+    "name": "Eastern Greenland Summer Time",
+    "utc": 0
+  },
+  "EGT": {
+    "name": "Eastern Greenland Time",
+    "utc": -60
+  },
+  "EIT": {
+    "name": "Eastern Indonesian Time",
+    "utc": 540
+  },
+  "EST": {
+    "name": "Eastern Standard Time",
+    "utc": -300
+  },
+  "FET": {
+    "name": "Further-eastern European Time",
+    "utc": 180
+  },
+  "FJT": {
+    "name": "Fiji Time",
+    "utc": 720
+  },
+  "FKST": {
+    "name": "Falkland Islands Summer Time",
+    "utc": -180
+  },
+  "FKT": {
+    "name": "Falkland Islands Time",
+    "utc": -240
+  },
+  "FNT": {
+    "name": "Fernando de Noronha Time",
+    "utc": -120
+  },
+  "GALT": {
+    "name": "Galapagos Time",
+    "utc": -360
+  },
+  "GAMT": {
+    "name": "Gambier Islands",
+    "utc": -540
+  },
+  "GET": {
+    "name": "Georgia Standard Time",
+    "utc": 240
+  },
+  "GFT": {
+    "name": "French Guiana Time",
+    "utc": -180
+  },
+  "GILT": {
+    "name": "Gilbert Island Time",
+    "utc": 720
+  },
+  "GIT": {
+    "name": "Gambier Island Time",
+    "utc": -540
+  },
+  "GMT": {
+    "name": "Greenwich Mean Time",
+    "utc": 0
+  },
+  "GST": {
+    "name": "Gulf Standard Time",
+    "utc": 240
+  },
+  "GYT": {
+    "name": "Guyana Time",
+    "utc": -240
+  },
+  "HADT": {
+    "name": "Hawaii-Aleutian Daylight Time",
+    "utc": -540
+  },
+  "HAEC": {
+    "name": "Heure Avancée d'Europe Centrale",
+    "utc": 120
+  },
+  "HAST": {
+    "name": "Hawaii-Aleutian Standard Time",
+    "utc": -600
+  },
+  "HKT": {
+    "name": "Hong Kong Time",
+    "utc": 480
+  },
+  "HMT": {
+    "name": "Heard and McDonald Islands Time",
+    "utc": 300
+  },
+  "HOVT": {
+    "name": "Khovd Time",
+    "utc": 420
+  },
+  "HST": {
+    "name": "Hawaii Standard Time",
+    "utc": -600
+  },
+  "ICT": {
+    "name": "Indochina Time",
+    "utc": 420
+  },
+  "IDT": {
+    "name": "Israel Daylight Time",
+    "utc": 180
+  },
+  "IOT": {
+    "name": "Indian Ocean Time",
+    "utc": 180
+  },
+  "IRDT": {
+    "name": "Iran Daylight Time",
+    "utc": 480
+  },
+  "IRKT": {
+    "name": "Irkutsk Time",
+    "utc": 480
+  },
+  "IRST": {
+    "name": "Iran Standard Time",
+    "utc": 210
+  },
+  "IST": {
+    "name": "Irish Summer Time",
+    "utc": 60
+  },
+  "JST": {
+    "name": "Japan Standard Time",
+    "utc": 540
+  },
+  "KGT": {
+    "name": "Kyrgyzstan Time",
+    "utc": 420
+  },
+  "KOST": {
+    "name": "Kosrae Time",
+    "utc": 660
+  },
+  "KRAT": {
+    "name": "Krasnoyarsk Time",
+    "utc": 420
+  },
+  "KST": {
+    "name": "Korea Standard Time",
+    "utc": 540
+  },
+  "LHST": {
+    "name": "Lord Howe Standard Time",
+    "utc": 630
+  },
+  "LINT": {
+    "name": "Line Islands Time",
+    "utc": 840
+  },
+  "MAGT": {
+    "name": "Magadan Time",
+    "utc": 720
+  },
+  "MART": {
+    "name": "Marquesas Islands Time",
+    "utc": -570
+  },
+  "MAWT": {
+    "name": "Mawson Station Time",
+    "utc": 300
+  },
+  "MDT": {
+    "name": "Mountain Daylight Time",
+    "utc": -360
+  },
+  "MET": {
+    "name": "Middle European Time",
+    "utc": 60
+  },
+  "MEST": {
+    "name": "Middle European Saving Time",
+    "utc": 120
+  },
+  "MHT": {
+    "name": "Marshall Islands",
+    "utc": 720
+  },
+  "MIST": {
+    "name": "Macquarie Island Station Time",
+    "utc": 660
+  },
+  "MIT": {
+    "name": "Marquesas Islands Time",
+    "utc": -570
+  },
+  "MMT": {
+    "name": "Myanmar Time",
+    "utc": 390
+  },
+  "MSK": {
+    "name": "Moscow Time",
+    "utc": 240
+  },
+  "MST": {
+    "name": "Mountain Standard Time",
+    "utc": -420
+  },
+  "MUT": {
+    "name": "Mauritius Time",
+    "utc": 240
+  },
+  "MVT": {
+    "name": "Maldives Time",
+    "utc": 300
+  },
+  "MYT": {
+    "name": "Malaysia Time",
+    "utc": 480
+  },
+  "NCT": {
+    "name": "New Caledonia Time",
+    "utc": 660
+  },
+  "NDT": {
+    "name": "Newfoundland Daylight Time",
+    "utc": -150
+  },
+  "NFT": {
+    "name": "Norfolk Time",
+    "utc": 690
+  },
+  "NPT": {
+    "name": "Nepal Time",
+    "utc": 345
+  },
+  "NST": {
+    "name": "Newfoundland Standard Time",
+    "utc": -210
+  },
+  "NT": {
+    "name": "Newfoundland Time",
+    "utc": -210
+  },
+  "NUT": {
+    "name": "Niue Time",
+    "utc": -690
+  },
+  "NZDT": {
+    "name": "New Zealand Daylight Time",
+    "utc": 780
+  },
+  "NZST": {
+    "name": "New Zealand Standard Time",
+    "utc": 720
+  },
+  "OMST": {
+    "name": "Omsk Time",
+    "utc": 360
+  },
+  "ORAT": {
+    "name": "Oral Time",
+    "utc": -300
+  },
+  "PDT": {
+    "name": "Pacific Daylight Time",
+    "utc": -420
+  },
+  "PET": {
+    "name": "Peru Time",
+    "utc": -300
+  },
+  "PETT": {
+    "name": "Kamchatka Time",
+    "utc": 720
+  },
+  "PGT": {
+    "name": "Papua New Guinea Time",
+    "utc": 600
+  },
+  "PHOT": {
+    "name": "Phoenix Island Time",
+    "utc": 780
+  },
+  "PHT": {
+    "name": "Philippine Time",
+    "utc": 480
+  },
+  "PKT": {
+    "name": "Pakistan Standard Time",
+    "utc": 300
+  },
+  "PMDT": {
+    "name": "Saint Pierre and Miquelon Daylight Time",
+    "utc": 480
+  },
+  "PMST": {
+    "name": "Saint Pierre and Miquelon Standard Time",
+    "utc": 480
+  },
+  "PONT": {
+    "name": "Pohnpei Standard Time",
+    "utc": 660
+  },
+  "PST": {
+    "name": "Pacific Standard Time",
+    "utc": -480
+  },
+  "RET": {
+    "name": "Réunion Time",
+    "utc": 240
+  },
+  "ROTT": {
+    "name": "Rothera Research Station Time",
+    "utc": -180
+  },
+  "SAKT": {
+    "name": "Sakhalin Island time",
+    "utc": 660
+  },
+  "SAMT": {
+    "name": "Samara Time",
+    "utc": 240
+  },
+  "SAST": {
+    "name": "South African Standard Time",
+    "utc": 120
+  },
+  "SBT": {
+    "name": "Solomon Islands Time",
+    "utc": 660
+  },
+  "SCT": {
+    "name": "Seychelles Time",
+    "utc": 240
+  },
+  "SGT": {
+    "name": "Singapore Time",
+    "utc": 480
+  },
+  "SLT": {
+    "name": "Sri Lanka Time",
+    "utc": 330
+  },
+  "SRT": {
+    "name": "Suriname Time",
+    "utc": -180
+  },
+  "SST": {
+    "name": "Singapore Standard Time",
+    "utc": 480
+  },
+  "SYOT": {
+    "name": "Showa Station Time",
+    "utc": 180
+  },
+  "TAHT": {
+    "name": "Tahiti Time",
+    "utc": -600
+  },
+  "THA": {
+    "name": "Thailand Standard Time",
+    "utc": 420
+  },
+  "TFT": {
+    "name": "Indian/Kerguelen",
+    "utc": 300
+  },
+  "TJT": {
+    "name": "Tajikistan Time",
+    "utc": 300
+  },
+  "TKT": {
+    "name": "Tokelau Time",
+    "utc": 840
+  },
+  "TLT": {
+    "name": "Timor Leste Time",
+    "utc": 540
+  },
+  "TMT": {
+    "name": "Turkmenistan Time",
+    "utc": 300
+  },
+  "TOT": {
+    "name": "Tonga Time",
+    "utc": 780
+  },
+  "TVT": {
+    "name": "Tuvalu Time",
+    "utc": 720
+  },
+  "UCT": {
+    "name": "Coordinated Universal Time",
+    "utc": 0
+  },
+  "ULAT": {
+    "name": "Ulaanbaatar Time",
+    "utc": 480
+  },
+  "UTC": {
+    "name": "Coordinated Universal Time",
+    "utc": 0
+  },
+  "UYST": {
+    "name": "Uruguay Summer Time",
+    "utc": -120
+  },
+  "UYT": {
+    "name": "Uruguay Standard Time",
+    "utc": -180
+  },
+  "UZT": {
+    "name": "Uzbekistan Time",
+    "utc": 300
+  },
+  "VET": {
+    "name": "Venezuelan Standard Time",
+    "utc": -270
+  },
+  "VLAT": {
+    "name": "Vladivostok Time",
+    "utc": 600
+  },
+  "VOLT": {
+    "name": "Volgograd Time",
+    "utc": 240
+  },
+  "VOST": {
+    "name": "Vostok Station Time",
+    "utc": 360
+  },
+  "VUT": {
+    "name": "Vanuatu Time",
+    "utc": 660
+  },
+  "WAKT": {
+    "name": "Wake Island Time",
+    "utc": 720
+  },
+  "WAST": {
+    "name": "West Africa Summer Time",
+    "utc": 120
+  },
+  "WAT": {
+    "name": "West Africa Time",
+    "utc": 60
+  },
+  "WEDT": {
+    "name": "Western European Daylight Time",
+    "utc": 60
+  },
+  "WEST": {
+    "name": "Western European Summer Time",
+    "utc": 60
+  },
+  "WET": {
+    "name": "Western European Time",
+    "utc": 0
+  },
+  "WST": {
+    "name": "Western Standard Time",
+    "utc": 480
+  },
+  "YAKT": {
+    "name": "Yakutsk Time",
+    "utc": 540
+  },
+  "YEKT": {
+    "name": "Yekaterinburg Time",
+    "utc": 300
+  }
+}

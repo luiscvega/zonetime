@@ -1,9 +1,9 @@
 require "cuba"
 require "json"
 
-require_relative "helpers"
+require_relative "lib/helpers"
 
-require_relative "query"
+require_relative "lib/query"
 
 Cuba.plugin Helpers
 
