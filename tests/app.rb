@@ -7,12 +7,12 @@ scope do
     assert_equal last_response.status, 200
     assert_equal last_response.headers["Content-Type"], "application/json"
 
-    result = {
+    expected = {
       "date" => "2014-01-01",
       "time" => "01:00 AM",
       "timezone" => "ART"
     }
 
-    assert_equal JSON.parse(last_response.body), result
+    assert_equal JSON.parse(last_response.body), expected
   end
 end
