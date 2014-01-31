@@ -1,17 +1,17 @@
 class Query
   def initialize(atts)
-    @year      = atts["year"] || Time.now.utc.year
-    @month     = atts["month"] || Time.now.utc.month
-    @day       = atts["day"] || Time.now.utc.day
-    @hour      = atts["hour"] || Time.now.utc.hour
+    @year      = atts["year"]   || Time.now.utc.year
+    @month     = atts["month"]  || Time.now.utc.month
+    @day       = atts["day"]    || Time.now.utc.day
+    @hour      = atts["hour"]   || Time.now.utc.hour
     @minute    = atts["minute"] || Time.now.utc.min
     @second    = atts["second"] || Time.now.utc.sec
-    @from      = atts["from"] || "UTC"
+    @from      = atts["from"]   || "UTC"
     @to        = atts["to"]
   end
 
   def time
-    @time ||= Time.new(@year, @month, @day, @hour, @minute, @second, from_timezone.offset)
+    @time ||= Time.new(@year, @month, @day, @hour, @minute, @second, from_timezone.offset).utc
   end
 
   def to_time
