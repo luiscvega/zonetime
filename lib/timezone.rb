@@ -8,7 +8,6 @@ class Timezone
   def initialize(code)
     @code = code
     @name = DATA[code]["name"]
-    @offset = DATA[code]["offset"]
+    @offset = DATA[code]["offset"] * 60 # convert to seconds
   end
-
 end

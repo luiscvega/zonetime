@@ -1,36 +1,49 @@
 class Query
   def initialize(atts)
-    @year   = atts["year"]
-    @month  = atts["month"]
-    @day    = atts["day"]
-    @hour   = atts["hour"]
-    @minute = atts["minute"]
-    @second = atts["second"]
-    @from   = atts["from"]
-    @to     = atts["to"]
+    @year      = atts["year"]
+    @month     = atts["month"]
+    @day       = atts["day"]
+    @hour      = atts["hour"]
+    @minute    = atts["minute"]
+    @second    = atts["second"]
+    @from      = atts["from"]
+    @to        = atts["to"]
   end
 
-  def time
-    case
-    when @from == "PHT" && @to == "ART" #
-      # +8 - -3 == 11; 12:00 pm => 1:00 am
-    when @from == "PHT" && @to == "GMT"
-      # +8 - 0 == 8; 12:00 pm => 4:00 am
-
-    end
-
-    Time.new(@year, @month, @day, @hour, @minute, @second, "-03:00")
+  # 12:00 PM PHT
+  def from_time
+    @from_time ||= Time.new(@year, @month, @day, @hour, @minute, @second, from_timezone.offset)
   end
 
-  def timezone
-    
+  # 4:00 AM GMT
+  def to_time
+    @to_time ||= Time.new(
+      @year,
+      @month,
+      @day,
+      @hour.to_i - ((from_timezone.offset / 60 / 60) - (to_timezone.offset / 60 / 60)),
+      @minute,
+      @second,
+      to_timezone.offset
+    )
+  end
+
+  def from_timezone
+    @from_timezone ||= Timezone.new(@from)
+  end
+
+  def to_timezone
+    @to_timezone ||= Timezone.new(@to)
   end
 
   def convert
     {
-      "date" => time.strftime("%Y-%m-%d"),
-      "time" => time.strftime("%I:%M %p"),
-      "timezone" => @to
+      "date" => to_time.strftime("%Y-%m-%d"),
+      "time" => to_time.strftime("%I:%M %p"),
+      "timezone" => {
+        "code" => to_timezone.code,
+        "name" => to_timezone.name
+      }
     }
   end
 end
