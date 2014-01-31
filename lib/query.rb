@@ -23,11 +23,11 @@ class Query
   end
 
   def from_timezone
-    @from_timezone ||= Timezone.new(@from)
+    @from_timezone ||= Timezone[@from]
   end
 
   def to_timezone
-    @to_timezone ||= Timezone.new(@to)
+    @to_timezone ||= Timezone[@to]
   end
 
   def convert

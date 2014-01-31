@@ -5,6 +5,10 @@ class Timezone
     DATA = JSON.parse(file.read)
   end
 
+  def self.[](code)
+    new(code)
+  end
+
   def initialize(code)
     @code = code
     @name = DATA[code]["name"]
