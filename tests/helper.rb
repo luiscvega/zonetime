@@ -3,27 +3,30 @@ require "cuba/test"
 
 require_relative "../app"
 
-class << Time
-  def freeze!
-    @time_frozen = now
-    return true
-  end
+class Time
+  class << self
+    attr :time_frozen
 
-  def unfreeze!
-    @time_frozen = nil
-    return true
-  end
+    def freeze!
+      @time_frozen = now
+      return true
+    end
 
-  def frozen?
-    @time_frozen.nil?
-  end
+    def unfreeze!
+      @time_frozen = nil
+      return true
+    end
 
-  def new(*args)
-    if frozen?
-      @time_frozen
-    else
-      super(*args)
+    def frozen?
+      @time_frozen.nil?
+    end
+
+    def self.new(*args)
+      if Time.frozen?
+        return time_frozen
+      else
+        return super(*args)
+      end
     end
   end
-  alias_method :now, :new
 end

@@ -1,11 +1,11 @@
 class Query
   def initialize(atts)
-    @year      = atts["year"] || Time.now.year
-    @month     = atts["month"] || Time.now.month
-    @day       = atts["day"] || Time.now.day
-    @hour      = atts["hour"] || Time.now.hour
-    @minute    = atts["minute"] || Time.now.min
-    @second    = atts["second"] || Time.now.sec
+    @year      = atts["year"] || Time.now.utc.year
+    @month     = atts["month"] || Time.now.utc.month
+    @day       = atts["day"] || Time.now.utc.day
+    @hour      = atts["hour"] || Time.now.utc.hour
+    @minute    = atts["minute"] || Time.now.utc.min
+    @second    = atts["second"] || Time.now.utc.sec
     @from      = atts["from"] || "UTC"
     @to        = atts["to"]
   end
@@ -31,7 +31,6 @@ class Query
   end
 
   def convert
-    require "pry"; binding.pry
     {
       "date" => to_time.strftime("%Y-%m-%d"),
       "time" => to_time.strftime("%I:%M %p"),

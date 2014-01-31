@@ -21,7 +21,7 @@ scope do
 
   test "default values" do
     Time.freeze!
-    time_frozen = Time.now.getgm
+    time_frozen = Time.now.getlocal(-10800)
 
     get "api?to=ART"
 
@@ -29,8 +29,8 @@ scope do
       "date" => time_frozen.to_date.to_s,
       "time" => time_frozen.strftime("%I:%M %p"),
       "timezone" => {
-        "code" => "GMT",
-        "name" => "Greenwich Mean Time"
+        "code" => "ART",
+        "name" => "Argentina Time"
       }
     }
 
