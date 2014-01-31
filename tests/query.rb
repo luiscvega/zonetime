@@ -1,6 +1,6 @@
 require_relative "helper"
 
-test "convert" do
+test "convert PHT to ART" do
   query = Query.new(
     "year"   => "2014",
     "month"  => "1",
@@ -16,6 +16,28 @@ test "convert" do
     "date" => "2014-01-01",
     "time" => "01:00 AM",
     "timezone" => "ART"
+  }
+
+  time = query.convert
+  assert_equal time, expected
+end
+
+test "convert PHT to GMT" do
+  query = Query.new(
+    "year"   => "2014",
+    "month"  => "1",
+    "day"    => "1",
+    "hour"   => "12",
+    "minute" => "00",
+    "second" => "00",
+    "from"   => "PHT",
+    "to"     => "GMT"
+  )
+
+  expected = {
+    "date" => "2014-01-01",
+    "time" => "04:00 AM",
+    "timezone" => "GMT"
   }
 
   time = query.convert

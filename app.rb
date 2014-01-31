@@ -4,6 +4,7 @@ require "json"
 require_relative "lib/helpers"
 
 require_relative "lib/query"
+require_relative "lib/timezone"
 
 Cuba.plugin Helpers
 
@@ -22,6 +23,6 @@ Cuba.define do
 
     res["Content-Type"] = "application/json"
 
-    res.write(query.convert.to_json)
+    res.write(JSON.pretty_generate(query.convert))
   end
 end
