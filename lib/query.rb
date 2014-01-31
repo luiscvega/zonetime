@@ -6,7 +6,7 @@ class Query
     @hour      = atts["hour"]
     @minute    = atts["minute"]
     @second    = atts["second"]
-    @from      = atts["from"]
+    @from      = atts["from"] || "UTC"
     @to        = atts["to"]
   end
 

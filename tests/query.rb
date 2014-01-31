@@ -86,3 +86,25 @@ test "convert PHT to GMT" do
   time = query.convert
   assert_equal time, expected
 end
+
+test "default parameters" do
+  Time.freeze!
+  time_frozen = Time.now.getgm
+
+  query = Query.new(
+    "to" => "GMT"
+  )
+
+  expected = {
+    "date" => time_frozen.to_date.to_s,
+    "time" => time_frozen.strftime("%I:%M %p"),
+    "timezone" => {
+      "code" => "GMT",
+      "name" => "Greenwich Mean Time"
+    }
+  }
+
+  assert_equal query.convert, expected
+
+  Time.unfreeze!
+end
