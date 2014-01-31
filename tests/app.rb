@@ -18,4 +18,22 @@ scope do
 
     assert_equal JSON.parse(last_response.body), expected
   end
+
+  test "default values" do
+    Time.freeze!
+    time_frozen = Time.now.getgm
+
+    get "api?to=ART"
+
+    expected = {
+      "date" => time_frozen.to_date.to_s,
+      "time" => time_frozen.strftime("%I:%M %p"),
+      "timezone" => {
+        "code" => "GMT",
+        "name" => "Greenwich Mean Time"
+      }
+    }
+
+    assert_equal JSON.parse(last_response.body), expected
+  end
 end

@@ -15,13 +15,15 @@ class << Time
   end
 
   def frozen?
-    !!@time_frozen
+    @time_frozen.nil?
   end
 
   def new(*args)
-    return super(*args) unless frozen?
-
-    @time_frozen
+    if frozen?
+      @time_frozen
+    else
+      super(*args)
+    end
   end
   alias_method :now, :new
 end
