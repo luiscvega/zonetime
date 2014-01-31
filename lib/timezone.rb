@@ -1,17 +1,14 @@
 class Timezone
   attr :code, :name, :offset
 
+  File.open(File.expand_path("timezones.json")) do |file|
+    DATA = JSON.parse(file.read)
+  end
+
   def initialize(code)
     @code = code
-    @name = self.class.data[code]["name"]
-    @offset = self.class.data[code]["offset"]
+    @name = DATA[code]["name"]
+    @offset = DATA[code]["offset"]
   end
 
-  def self.data
-    file = File.open(File.expand_path("timezones.json"))
-    timezones = JSON.parse(file.read)
-    file.close
-
-    return timezones
-  end
 end
