@@ -14,15 +14,15 @@ setup do
 end
 
 test "#from_timezone" do |args|
-  query = Query.new(args)
-
-  assert_equal query.from_timezone.code, "PHT"
+  assert_equal Query.new(args).from_timezone.code, "PHT"
 end
 
 test "#to_timezone" do |args|
-  query = Query.new(args)
+  assert_equal Query.new(args).to_timezone.code, "ART"
+end
 
-  assert_equal query.to_timezone.code, "ART"
+test "#time" do |args|
+  assert_equal Query.new(args).time, Time.new(2014, 1, 1, 4, 0, 0, 0)
 end
 
 test "#from_time" do |args|

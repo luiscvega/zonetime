@@ -10,22 +10,16 @@ class Query
     @to        = atts["to"]
   end
 
-  # 12:00 PM PHT
-  def from_time
-    @from_time ||= Time.new(@year, @month, @day, @hour, @minute, @second, from_timezone.offset)
+  def time
+    @time ||= Time.new(@year, @month, @day, @hour, @minute, @second, from_timezone.offset)
   end
 
-  # 4:00 AM GMT
   def to_time
-    @to_time ||= Time.new(
-      @year,
-      @month,
-      @day,
-      @hour.to_i - ((from_timezone.offset / 60 / 60) - (to_timezone.offset / 60 / 60)),
-      @minute,
-      @second,
-      to_timezone.offset
-    )
+    @to_time ||= time.getlocal(to_timezone.offset)
+  end
+
+  def from_time
+    @from_time ||= time.getlocal(from_timezone.offset)
   end
 
   def from_timezone
