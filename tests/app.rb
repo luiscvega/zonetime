@@ -10,7 +10,10 @@ scope do
     expected = {
       "date" => "2014-01-01",
       "time" => "01:00 AM",
-      "timezone" => "ART"
+      "timezone" => {
+        "code" => "ART",
+        "name" => "Argentina Time"
+      }
     }
 
     assert_equal JSON.parse(last_response.body), expected
