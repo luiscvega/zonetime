@@ -1,4 +1,6 @@
 class Query
+  attr :year, :month, :day, :hour, :minute, :second, :to, :from
+
   def initialize(atts)
     @year      = atts["year"]   || Time.now.utc.year
     @month     = atts["month"]  || Time.now.utc.month
@@ -11,7 +13,7 @@ class Query
   end
 
   def time
-    @time ||= Time.new(@year, @month, @day, @hour, @minute, @second, from_timezone.offset).utc
+    @time ||= Time.new(year, month, day, hour, minute, second, from_timezone.offset).utc
   end
 
   def to_time
